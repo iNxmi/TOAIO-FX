@@ -1,0 +1,7 @@
+@import "/com/nami/stylesheets/dark/Button.css";
+@import "/com/nami/stylesheets/dark/Slider.css";
+@import "/com/nami/stylesheets/dark/Menu.css";
+
+.root {
+	-fx-background: #3f3f3f;
+}

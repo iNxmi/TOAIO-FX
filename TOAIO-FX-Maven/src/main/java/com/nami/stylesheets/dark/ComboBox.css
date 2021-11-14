@@ -1,0 +1,26 @@
+.combo-box {
+	-fx-background-radius: 0.0;
+	-fx-background-color: #3f3f3f;
+	-fx-border-color: white;
+	-fx-background-insets: 0;
+}
+
+.combo-box .arrow {
+	-fx-background-color: white;
+}
+
+.combo-box .list-cell {
+	-fx-background-radius: 0.0;
+	-fx-background-color: #3f3f3f;
+	-fx-text-fill: white;
+}
+
+.combo-box:hover{
+	-fx-background-color: #4f4f4f;
+}
+
+.combo-box .list-cell:hover {
+	-fx-background-radius: 0.0;
+	-fx-background-color: #4f4f4f;
+	-fx-text-fill: white;
+}

@@ -1,0 +1,14 @@
+@import "/com/nami/stylesheets/dark/Button.css";
+@import "/com/nami/stylesheets/dark/TextField.css";
+@import "/com/nami/stylesheets/dark/Spinner.css";
+@import "/com/nami/stylesheets/dark/ComboBox.css";
+@import "/com/nami/stylesheets/dark/Separator.css";
+@import "/com/nami/stylesheets/dark/ProgressBar.css";
+
+.root {
+	-fx-background-color: #3f3f3f;
+}
+
+.label {
+	-fx-text-fill: white;
+}

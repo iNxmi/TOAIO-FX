@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nami.projects.sorting.scenes.SortingNewScene">
+   <children>
+      <VBox alignment="CENTER_LEFT" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox spacing="5.0">
+               <children>
+                  <Label text="Create a Sorting Capture">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="toDoLabel" text="Enter File Name" />
+               </children>
+            </VBox>
+            <Separator />
+            <VBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label text="Settings">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <VBox spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER" text="File name:" />
+                              <TextField fx:id="fileNameTextField" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Number of Nodes:" />
+                              <Spinner fx:id="numberOfNodesSpinner" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Algorithm:" />
+                              <ComboBox fx:id="algorithmChoiceBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox spacing="10.0">
+               <children>
+                  <Label text="Directory">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER_LEFT" spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Path:" />
+                              <TextField fx:id="directoryPathTextField" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                          <buttons>
+                              <Button mnemonicParsing="false" onAction="#onBrowseAction" text="Browse" />
+                            <Button mnemonicParsing="false" onAction="#onOpenAction" text="Open" />
+                              <Button mnemonicParsing="false" onAction="#onResetAction" text="Reset" />
+                          </buttons>
+                        </ButtonBar>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label text="Progress">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label fx:id="progressLabel" text="..." />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <ButtonBar>
+               <buttons>
+                  <Button fx:id="finishButton" disable="true" mnemonicParsing="false" onAction="#onFinishButtonAction" text="Finish">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button cancelButton="true" mnemonicParsing="false" onAction="#onCancelButtonAction" text="Cancel">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </buttons>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

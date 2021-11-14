@@ -1,0 +1,23 @@
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-radius: 0.0;
+	-fx-background-color: #3f3f3f;
+	-fx-border-color: white;
+	-fx-body-color: white;
+	-fx-background-insets: 0.0;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+	-fx-background-color: #4f4f4f;
+}
+
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed{
+	-fx-background-color: #5f5f5f;
+}
+
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}

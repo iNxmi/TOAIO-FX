@@ -1,0 +1,8 @@
+.menu-bar, .context-menu {
+	-fx-background-color: white;
+	-fx-background-insets: 0;
+}
+
+.menu .label{
+	-fx-text-fill: black;
+}

@@ -1,0 +1,33 @@
+@import "/com/nami/stylesheets/dark/Button.css";
+@import "/com/nami/stylesheets/dark/Slider.css";
+@import "/com/nami/stylesheets/dark/ListView.css";
+@import "/com/nami/stylesheets/dark/Menu.css";
+
+/* Pane */
+.root {
+	-fx-background: #3f3f3f;
+}
+
+/* Label */
+.label {
+	-fx-text-fill: white;
+}
+
+/* Bar Chart */
+.chart-vertical-grid-lines {
+	-fx-stroke: transparent;
+}
+
+.chart-horizontal-grid-lines {
+	-fx-stroke: white;
+}
+
+.default-color0.chart-bar {
+	-fx-background-color: red;
+	-fx-border-color: black;
+}
+
+.default-color1.chart-bar {
+	-fx-background-color: gray;
+	-fx-border-color: black;
+}

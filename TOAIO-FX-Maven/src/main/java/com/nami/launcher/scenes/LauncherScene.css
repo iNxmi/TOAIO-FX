@@ -1,0 +1,14 @@
+@import "/com/nami/stylesheets/dark/Button.css";
+@import "/com/nami/stylesheets/dark/ComboBox.css";
+@import "/com/nami/stylesheets/dark/Separator.css";
+
+/* Pane */
+#pane {
+	-fx-background-color: #3f3f3f;
+}
+
+/* Title */
+#title {
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
