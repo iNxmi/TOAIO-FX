@@ -7,7 +7,7 @@ import com.nami.components.manager.StageManager;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Launch extends Application {
 
 	private FolderManager folderManager;
 	private StageManager stageManager;

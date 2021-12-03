@@ -2,7 +2,7 @@ package com.nami.components.manager;
 
 import java.io.IOException;
 
-import com.nami.Main;
+import com.nami.Launch;
 import com.nami.components.SceneController;
 import com.nami.components.Scenes;
 
@@ -13,10 +13,10 @@ import javafx.stage.Stage;
 
 public class StageManager {
 
-	private Main main;
+	private Launch main;
 	private Stage stage = new Stage();
 
-	public StageManager(Main main) {
+	public StageManager(Launch main) {
 		this.main = main;
 	}
 

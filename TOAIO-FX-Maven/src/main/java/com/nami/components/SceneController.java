@@ -1,10 +1,10 @@
 package com.nami.components;
 
-import com.nami.Main;
+import com.nami.Launch;
 
 public abstract class SceneController {
 
-	private Main main;
+	private Launch main;
 
 	public void init() {
 		onInit();
@@ -12,11 +12,11 @@ public abstract class SceneController {
 
 	public abstract void onInit();
 
-	public void setMain(Main main) {
+	public void setMain(Launch main) {
 		this.main = main;
 	}
 
-	public Main getMain() {
+	public Launch getMain() {
 		return main;
 	}
 
