@@ -15,7 +15,7 @@ public class SortingAlgorithmCapture {
 
 	private final String algorithmName;
 
-	private List<SortingAlgorithmImage> images = new ArrayList<>();
+	private List<SortingAlgorithmFrame> images = new ArrayList<>();
 
 	private final int totalFrames;
 
@@ -26,7 +26,7 @@ public class SortingAlgorithmCapture {
 
 	private final long pastTime;
 
-	public SortingAlgorithmCapture(String algorithmName, List<SortingAlgorithmImage> images, int numberOfNodes,
+	public SortingAlgorithmCapture(String algorithmName, List<SortingAlgorithmFrame> images, int numberOfNodes,
 			long pastTime, int[] stats) {
 		this.algorithmName = algorithmName;
 
@@ -57,7 +57,7 @@ public class SortingAlgorithmCapture {
 				config = new Config(zipFile.getInputStream(zipFile.getEntry("frame-" + i + ".dat")));
 				config.load();
 
-				images.add(new SortingAlgorithmImage(config.getLong("pastTime"), config.getIntArray("nodes"),
+				images.add(new SortingAlgorithmFrame(config.getLong("pastTime"), config.getIntArray("nodes"),
 						config.getIntArray("positions"), config.getIntArray("stats")));
 			}
 			config.close();
@@ -82,7 +82,7 @@ public class SortingAlgorithmCapture {
 
 			for (var i = 0; i < images.size(); i++) {
 				zipOutputStream.putNextEntry(new ZipEntry("frame-" + i + ".dat"));
-				SortingAlgorithmImage img = images.get(i);
+				SortingAlgorithmFrame img = images.get(i);
 				config = new Config(zipOutputStream);
 				config.add("pastTime", img.getPastTime());
 
@@ -113,7 +113,7 @@ public class SortingAlgorithmCapture {
 		return algorithmName;
 	}
 
-	public List<SortingAlgorithmImage> getImages() {
+	public List<SortingAlgorithmFrame> getImages() {
 		return images;
 	}
 

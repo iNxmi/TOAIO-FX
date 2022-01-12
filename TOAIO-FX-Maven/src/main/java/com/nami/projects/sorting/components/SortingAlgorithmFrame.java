@@ -1,6 +1,6 @@
 package com.nami.projects.sorting.components;
 
-public class SortingAlgorithmImage {
+public class SortingAlgorithmFrame {
 
 	private final int[] nodes;
 	private final int[] positions;
@@ -8,7 +8,7 @@ public class SortingAlgorithmImage {
 
 	private final long pastTime;
 
-	public SortingAlgorithmImage(long pastTime, int[] nodes, int[] positions, int[] stats) {
+	public SortingAlgorithmFrame(long pastTime, int[] nodes, int[] positions, int[] stats) {
 		this.pastTime = pastTime;
 		this.nodes = nodes.clone();
 		this.positions = positions.clone();

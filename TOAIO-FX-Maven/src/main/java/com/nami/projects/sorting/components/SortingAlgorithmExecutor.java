@@ -12,11 +12,11 @@ public abstract class SortingAlgorithmExecutor implements Runnable {
 	protected int[] positions;
 	protected int[] stats;
 
-	protected List<SortingAlgorithmImage> images = new ArrayList<>();
+	protected List<SortingAlgorithmFrame> images = new ArrayList<>();
 
 	private long startTime;
 
-	private SortingAlgorithmImage currentImage;
+	private SortingAlgorithmFrame currentImage;
 
 	protected boolean calculationFinished;
 
@@ -57,7 +57,7 @@ public abstract class SortingAlgorithmExecutor implements Runnable {
 	}
 
 	public void capture() {
-		currentImage = new SortingAlgorithmImage(System.nanoTime() - startTime, nodes, positions, stats);
+		currentImage = new SortingAlgorithmFrame(System.nanoTime() - startTime, nodes, positions, stats);
 		images.add(currentImage);
 	}
 
@@ -77,7 +77,7 @@ public abstract class SortingAlgorithmExecutor implements Runnable {
 		return onGetWorstCase(size);
 	}
 
-	public SortingAlgorithmImage getCurrentImage() {
+	public SortingAlgorithmFrame getCurrentImage() {
 		return currentImage;
 	}
 
@@ -89,7 +89,7 @@ public abstract class SortingAlgorithmExecutor implements Runnable {
 		return capture;
 	}
 
-	public List<SortingAlgorithmImage> getImages() {
+	public List<SortingAlgorithmFrame> getImages() {
 		return images;
 	}
 
